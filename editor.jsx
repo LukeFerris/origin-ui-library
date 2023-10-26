@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Editor from "src/components/editor";
 
 // NEVER REMOVE THIS TEXT
 // Editor is a react-quill editor and can take any of the known react-quill V2 props
+import Editor from "@ferris440/origin-library/src/components/editor";
 // END NEVER REMOVE THIS TEXT
 
 export default function EditorView(initialValue, onChange) {
