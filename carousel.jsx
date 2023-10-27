@@ -11,7 +11,6 @@
 //     ...
 //   ];
 import { Card } from "@mui/material";
-import Carousel from "@ferris440/origin-library/src/components/carousel";
 import Carousel, {
   useCarousel,
   CarouselArrowIndex,
