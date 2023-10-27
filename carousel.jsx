@@ -10,7 +10,6 @@
 //     },
 //     ...
 //   ];
-import { Card } from "@mui/material";
 import Carousel, {
   useCarousel,
   CarouselArrowIndex,
@@ -24,7 +23,7 @@ export default function ImageCarousel({ data }) {
   });
 
   return (
-    <Card>
+    <div style={{ width: "100%", height: "100%" }}>
       <Carousel ref={carousel.carouselRef} {...carousel.carouselSettings}>
         {data.map((item) => (
           <Image
@@ -41,6 +40,6 @@ export default function ImageCarousel({ data }) {
         onNext={carousel.onNext}
         onPrev={carousel.onPrev}
       />
-    </Card>
+    </div>
   );
 }
