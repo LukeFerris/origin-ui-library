@@ -9,7 +9,7 @@ import MapGL from "@ferris440/origin-library/src/components/map/mapGL";
 // satelliteStreets: "mapbox://styles/mapbox/satellite-streets-v11",
 // END DO NOT REMOVE THIS TEXT
 
-// A MAP GL instance, takes a theme and any other valid MAPGL prop e.g. initialViewState
+// A MAP GL instance, takes a theme and any other valid react-map-gl (MAPGL) prop e.g. initialViewState
 export default function Map({ otherMapGLPops }) {
   return (
     <MapGL mapStyle="mapbox://styles/mapbox/streets-v11" {...otherMapGLPops} />
