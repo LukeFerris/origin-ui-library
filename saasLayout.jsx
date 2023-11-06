@@ -1,5 +1,5 @@
 import { Box, Toolbar } from "@mui/material";
-import { Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 const drawerWidth = 240;
 
 export default function SaaSLayoutContainer() {
@@ -19,7 +19,7 @@ export default function SaaSLayoutContainer() {
       >
         <Toolbar />
         <div style={{ padding: "20px", flexGrow: 1, overflow: "hidden" }}>
-          <Outlet />
+          <Routes>{/* <Route index element={<New_Component />} /> */}</Routes>
         </div>
       </Box>
     </Box>
