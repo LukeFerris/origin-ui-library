@@ -17,8 +17,13 @@ import Toolbar from "@mui/material/Toolbar";
 // Project imports
 // import Logo from "../../assets/logo.png";
 
+// DO NOT REMOVE
+// drawerWidth: width in pixels of menu
+// Items is an array of menu item objects:
+// [{ id: string, path: string including first /, icon: path to icon imported from @mui/icons-material, text: string}]
+// END DO NOT REMOVE
 export default function PermanentSideNavigationBar({
-  drawerWidth,
+  drawerWidth = 240,
   items = [],
 }) {
   return (
