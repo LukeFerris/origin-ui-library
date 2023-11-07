@@ -21,6 +21,7 @@ import Toolbar from "@mui/material/Toolbar";
 // drawerWidth: width in pixels of menu
 // Items is an array of menu item objects:
 // [{ id: string, path: string including first /, icon: path to icon imported from @mui/icons-material, text: string}]
+// example here with icon imported using "import HomeIcon from '@mui/icons-material/Home';" in the parent: [{ id: 'Home', path: '/', icon: <HomeIcon/>, text: 'Home'}]
 // END IMPORTANT
 export default function PermanentSideNavigationBar({
   drawerWidth = 240,
