@@ -10,8 +10,14 @@ import MapGL from "@ferris440/origin-library/src/components/map/mapGL";
 // END DO NOT REMOVE THIS TEXT
 
 // A MAP GL instance, takes a theme and any other valid react-map-gl (MAPGL) prop e.g. initialViewState
+// NB The MapGL must be contained within a div with width and height (cannot be in %)
 export default function Map({ otherMapGLPops }) {
   return (
-    <MapGL mapStyle="mapbox://styles/mapbox/streets-v11" {...otherMapGLPops} />
+    <div style={{ width: "500px", height: "500px" }}>
+      <MapGL
+        mapStyle="mapbox://styles/mapbox/streets-v11"
+        {...otherMapGLPops}
+      />
+    </div>
   );
 }
