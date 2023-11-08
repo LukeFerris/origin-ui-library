@@ -60,7 +60,7 @@ export default function PermanentSideNavigationBar({
               src={Logo}
               alt="Origin logo"
             /> */}
-                Logo Image
+                {/* Logo Image */}
               </Box>
             </Toolbar>
             <List>
