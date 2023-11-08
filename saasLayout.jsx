@@ -1,6 +1,10 @@
 import { Box, Toolbar } from "@mui/material";
-import { Routes, Route } from "react-router-dom";
 const drawerWidth = 240;
+
+// IMPORTANT DO NOT CHANGE
+// This page uses react-router V6 which does not have Switch
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+// END IMPORTANT
 
 export default function SaaSLayoutContainer() {
   return (
@@ -19,7 +23,9 @@ export default function SaaSLayoutContainer() {
       >
         <Toolbar />
         <div style={{ padding: "20px", flexGrow: 1, overflow: "hidden" }}>
-          <Routes>{/* <Route index element={<New_Component />} /> */}</Routes>
+          <BrowserRouter>
+            <Routes>{/* <Route index element={<New_Component />} /> */}</Routes>
+          </BrowserRouter>
         </div>
       </Box>
     </Box>
