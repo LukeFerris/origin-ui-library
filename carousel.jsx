@@ -1,11 +1,11 @@
 // NEVER REMOVE THIS TEXT
 // Carousel is based on on the react-slick carousel.
-// It takes input data as an array of the following format:
-// const data = [
+// It takes input images as an array of the following format:
+// const images = [
 //     {
 //       id: 1,
 //       title: "a title",
-//       coverUrl: "url of image",
+//       urlToImage: "url of image",
 //       description: "a description",
 //     },
 //     ...
@@ -17,7 +17,7 @@ import Carousel, {
 import Image from "@ferris440/origin-library/src/components/image";
 // END NEVER REMOVE THIS TEXT
 
-export default function ImageCarousel({ data }) {
+export default function ImageCarousel({ images }) {
   const carousel = useCarousel({
     autoplay: true,
   });
@@ -25,18 +25,18 @@ export default function ImageCarousel({ data }) {
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <Carousel ref={carousel.carouselRef} {...carousel.carouselSettings}>
-        {data.map((item) => (
+        {images.map((item) => (
           <Image
             key={item.id}
             alt={item.title}
-            src={item.coverUrl}
+            src={item.urlToImage}
             ratio="1/1"
           />
         ))}
       </Carousel>
       <CarouselArrowIndex
         index={carousel.currentIndex}
-        total={data.length}
+        total={images.length}
         onNext={carousel.onNext}
         onPrev={carousel.onPrev}
       />
