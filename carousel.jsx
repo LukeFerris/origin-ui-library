@@ -1,6 +1,6 @@
 // NEVER REMOVE THIS TEXT
 // Carousel is based on on the react-slick carousel.
-// It takes input images as an array of the following format:
+// You must construct an array of objects with the following properties:
 // const images = [
 //     {
 //       id: 1,
@@ -17,7 +17,21 @@ import Carousel, {
 import Image from "@ferris440/origin-library/src/components/image";
 // END NEVER REMOVE THIS TEXT
 
-export default function ImageCarousel({ images }) {
+// You can import images to be used here e.g.
+import image1 from "image1.png";
+
+export default function ImageCarousel() {
+  // image arrays are created as shown
+  const images = [
+    {
+      id: "birdImage1",
+      title: "Bird in night sky",
+      urlToImage: image1,
+      description: "A bird flying high in the nights sky",
+    },
+  ];
+
+  // any react-slick carousel settings
   const carousel = useCarousel({
     autoplay: true,
   });
