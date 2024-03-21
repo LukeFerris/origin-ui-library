@@ -41,6 +41,7 @@ export default function ImageCarousel() {
       <Carousel ref={carousel.carouselRef} {...carousel.carouselSettings}>
         {images.map((item) => (
           <Image
+            class="drop-shadow-none"
             key={item.id}
             alt={item.title}
             src={item.urlToImage}
